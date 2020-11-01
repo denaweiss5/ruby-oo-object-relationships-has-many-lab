@@ -14,10 +14,9 @@ class Post
     end
 
     def author_name 
-        my_author = Author.all.select do |author|
-        author.name == self.author.name
-       end     
-       self.author.name 
+        if self.author 
+            self.author.name 
+        end
     end
 
 end

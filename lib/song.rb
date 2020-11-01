@@ -14,11 +14,9 @@ class Song
    end
 
    def artist_name
-    Song.all.select do |song|
-        song.artist = self.artist
-            self.artist.name
+        if self.artist 
+            self.artist.name 
         end
-        self.artist.name
    end
 
 end
